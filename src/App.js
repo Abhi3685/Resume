@@ -8,11 +8,13 @@ import { Resume } from './components/Resume';
 import { Portfolio } from './components/Portfolio';
 import { Contact } from './components/Contact';
 import { Sidebar } from './components/Sidebar';
+import { BgLines } from './components/BgLines';
 
 function App() {
   return (
     <Router>
       <Sidebar />
+      <BgLines />
       <Switch>
         <Route path="/about">
           <About />
