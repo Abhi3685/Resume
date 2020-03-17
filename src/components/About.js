@@ -8,7 +8,7 @@ export class About extends Component {
                     <h1>About Me</h1>
                     <span>About Me</span>
                 </div>
-                <div className="section_content">
+                <div className="about_content">
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="about_img_wrapper">
