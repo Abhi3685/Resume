@@ -602,3 +602,90 @@ i.fa-briefcase, i.fa-user-graduate {
 .item_img_wrapper ul li i[class*='fa']:hover {
     background: #037fff;
 }
+
+/* Portfolio popup */
+.popupbox-wrapper {
+    background: url(https://static.impression.co.uk/2014/05/loading1.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Contact */
+.contact_content h3 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.contact_content .form-control {
+    color: #a4acc4;
+    background-color: transparent;
+    border-radius: 0;
+    border: 1px solid #2e344e;
+    margin-bottom: 30px;
+}
+
+.contact_content .form-control:focus {
+    box-shadow: none;
+}
+
+.contact_content input {
+    height: 50px;
+    padding: 0 15px;
+}
+
+.contact_content .error {
+    border-color: red !important;
+}
+
+.contact_content textarea {
+    padding: 15px 15px;
+}
+
+.contact_content .form_field {
+    position: relative;
+}
+
+.contact_content .form_field label {
+    position: absolute;
+    font-size: 15px;
+    padding: 0 10px;
+    top: -12px;
+    left: 15px;
+    background: #10121b;
+}
+
+.info_block {
+    background-color: #191d2b;
+    display: flex;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.info_block_icon {
+    font-size: 30px;
+    padding: 20px;
+    height: 75px;
+    margin-right: 30px;
+    border: 1.5px solid #2e344e;
+}
+
+.info_block_detail h5 {
+    color: #fff;
+}
+
+.info_block_detail p {
+    margin-bottom: 0px;
+}
+
+.contact_msg {
+    padding: 20px;
+    background: #fff;
+}
+
+.contact_msg p {
+    margin-bottom: 0;
+}
+
+.contact_msg .fa-check-circle {
+    font-size: 30px;
+}

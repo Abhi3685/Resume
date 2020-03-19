@@ -1,7 +1,35 @@
 import React, { Component } from 'react'
-import ModalVideo from 'react-modal-video'
+import { PopupboxManager, PopupboxContainer } from 'react-popupbox';
+import 'react-popupbox/dist/react-popupbox.css'
 
 export class Portfolio extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            key1: "SFQmVtfdKfY",
+            key2: "BBw0qk6h1Uo", // Blogie
+            key3: "SFQmVtfdKfY",
+            key4: "SFQmVtfdKfY",
+            key5: "bttvyFC-71g", // Beaumir
+            key6: "SFQmVtfdKfY",
+            key7: "L-7uD6ZvFIg", // RapidFire
+            key8: "Nvuz488T3es" // Cukape
+        };
+    }
+
+    openPopupbox(key) {
+        const content = (
+            <div>
+                <iframe 
+                    width="560" height="315" title="portfolio_video"
+                    src={"https://www.youtube.com/embed/" + key} 
+                    frameborder="0" allowfullscreen 
+                    allow="accelerometer; autoplay; encrypted-media;"></iframe>
+            </div>
+        )
+        PopupboxManager.open({ content })
+    }
+
     render() {
         return (
             <div className="section_wrapper container">
@@ -9,9 +37,6 @@ export class Portfolio extends Component {
                     <h1>Portfolio</h1>
                     <span>Portfolio</span>
                 </div>
-
-                <ModalVideo channel='youtube' isOpen={true} videoId='L61p2uyiMSo' onClose={() => this.setState({isOpen: false})} />
-
                 <div className="portfolio_content">
                     <div className="row">
                         <div className="col-lg-4 col-md-6">
@@ -19,7 +44,7 @@ export class Portfolio extends Component {
                                 <div className="item_img_wrapper">
                                     <img width="100%" src="/p1.png" alt="" />
                                     <ul>
-                                        <li><i className="fa fa-search-plus"></i></li>
+                                        <li><i onClick={() => this.openPopupbox(this.state.key1)} className="fa fa-search-plus"></i></li>
                                         <li><a rel="noopener noreferrer" target="_blank" href="https://workcollab.herokuapp.com/"><i className="fas fa-link"></i></a></li>
                                     </ul>
                                 </div>
@@ -32,7 +57,7 @@ export class Portfolio extends Component {
                                 <div className="item_img_wrapper">
                                     <img width="100%" src="/p2.png" alt="" />
                                     <ul>
-                                        <li><i className="fa fa-search-plus"></i></li>
+                                        <li><i onClick={() => this.openPopupbox(this.state.key2)} className="fa fa-search-plus"></i></li>
                                         <li><a rel="noopener noreferrer" target="_blank" href="http://bloggie.cf/"><i className="fas fa-link"></i></a></li>
                                     </ul>
                                 </div>
@@ -45,7 +70,7 @@ export class Portfolio extends Component {
                                 <div className="item_img_wrapper">
                                     <img width="100%" src="/p3.png" alt="" />
                                     <ul>
-                                        <li><i className="fa fa-search-plus"></i></li>
+                                        <li><i onClick={() => this.openPopupbox(this.state.key3)} className="fa fa-search-plus"></i></li>
                                         <li><a rel="noopener noreferrer" target="_blank" href="http://privatechat.glitch.me/"><i className="fas fa-link"></i></a></li>
                                     </ul>
                                 </div>
@@ -58,7 +83,7 @@ export class Portfolio extends Component {
                                 <div className="item_img_wrapper">
                                     <img width="100%" src="/p4.png" alt="" />
                                     <ul>
-                                        <li><i className="fa fa-search-plus"></i></li>
+                                        <li><i onClick={() => this.openPopupbox(this.state.key4)} className="fa fa-search-plus"></i></li>
                                     </ul>
                                 </div>
                                 <h5><span>Skodun</span></h5>
@@ -70,7 +95,7 @@ export class Portfolio extends Component {
                                 <div className="item_img_wrapper">
                                     <img width="100%" src="/p5.png" alt="" />
                                     <ul>
-                                        <li><i className="fa fa-search-plus"></i></li>
+                                        <li><i onClick={() => this.openPopupbox(this.state.key5)} className="fa fa-search-plus"></i></li>
                                         <li><a rel="noopener noreferrer" target="_blank" href="http://beaumir.com/"><i className="fas fa-link"></i></a></li>
                                     </ul>
                                 </div>
@@ -83,7 +108,7 @@ export class Portfolio extends Component {
                                 <div className="item_img_wrapper">
                                     <img width="100%" src="/p6.png" alt="" />
                                     <ul>
-                                        <li><i className="fa fa-search-plus"></i></li>
+                                        <li><i onClick={() => this.openPopupbox(this.state.key6)} className="fa fa-search-plus"></i></li>
                                     </ul>
                                 </div>
                                 <h5><span>Weblelo</span></h5>
@@ -95,7 +120,7 @@ export class Portfolio extends Component {
                                 <div className="item_img_wrapper">
                                     <img width="100%" src="/p7.png" alt="" />
                                     <ul>
-                                        <li><i className="fa fa-search-plus"></i></li>
+                                        <li><i onClick={() => this.openPopupbox(this.state.key7)} className="fa fa-search-plus"></i></li>
                                         <li><a rel="noopener noreferrer" target="_blank" href="https://abhi3685.github.io/Quiz-Game/quiz.html"><i className="fas fa-link"></i></a></li>
                                     </ul>
                                 </div>
@@ -108,7 +133,7 @@ export class Portfolio extends Component {
                                 <div className="item_img_wrapper">
                                     <img width="100%" src="/p8.png" alt="" />
                                     <ul>
-                                        <li><i className="fa fa-search-plus"></i></li>
+                                        <li><i onClick={() => this.openPopupbox(this.state.key8)} className="fa fa-search-plus"></i></li>
                                         <li><a rel="noopener noreferrer" target="_blank" href="http://cukape.netlify.com/"><i className="fas fa-link"></i></a></li>
                                     </ul>
                                 </div>
@@ -119,6 +144,7 @@ export class Portfolio extends Component {
                     </div>
                 </div>
                 <br/><br/>
+                <PopupboxContainer />
             </div>
         )
     }
