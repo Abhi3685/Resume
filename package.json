@@ -10,6 +10,7 @@
     "react": "^16.13.0",
     "react-animation": "^1.2.2",
     "react-dom": "^16.13.0",
+    "react-ga": "^2.7.0",
     "react-hook-form": "^5.1.1",
     "react-particles-js": "^2.7.1",
     "react-popupbox": "^2.0.8",
