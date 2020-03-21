@@ -6,12 +6,12 @@ export class Portfolio extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            key1: "SFQmVtfdKfY",
+            key1: "ESrgmr64RZ8", // WorkCollab
             key2: "BBw0qk6h1Uo", // Blogie
-            key3: "SFQmVtfdKfY",
-            key4: "SFQmVtfdKfY",
+            key3: "3z0ZwHCPJ6c", // Private Chat
+            key4: "fw4BOveN9hI", // Skodun
             key5: "bttvyFC-71g", // Beaumir
-            key6: "SFQmVtfdKfY",
+            key6: "8V92TGSMm3s", // Snapshop
             key7: "L-7uD6ZvFIg", // RapidFire
             key8: "Nvuz488T3es" // Cukape
         };
@@ -109,10 +109,11 @@ export class Portfolio extends Component {
                                     <img width="100%" src="/p6.png" alt="" />
                                     <ul>
                                         <li><i onClick={() => this.openPopupbox(this.state.key6)} className="fa fa-search-plus"></i></li>
+                                        <li><a rel="noopener noreferrer" target="_blank" href="http://snapshop.epizy.com/"><i className="fas fa-link"></i></a></li>
                                     </ul>
                                 </div>
-                                <h5><span>Weblelo</span></h5>
-                                <h6>Website Builder</h6>
+                                <h5><span>SnapShop</span></h5>
+                                <h6>E-Commerce Site</h6>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6">

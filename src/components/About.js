@@ -1,6 +1,12 @@
 import React, { Component } from 'react'
 
 export class About extends Component {
+    getAge(d1, d2){
+        d2 = new Date();
+        var diff = d2.getTime() - d1.getTime();
+        return Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+    }
+
     render() {
         return (
             <div className="section_wrapper container">
@@ -20,13 +26,14 @@ export class About extends Component {
                             <p>I am a full stack web developer. I can provide clean & optimized code with pixel perfect design. I also make website more & more interactive with web animations.</p>
                             <br/>
                             <p><b>Full Name</b> Abhishek Bindra</p>
-                            <p><b>Age</b> 20 Years</p>
+                            <p><b>Age</b> {this.getAge(new Date(2000, 1, 14))} Years</p>
                             <p><b>Nationality</b> Indian</p>
                             <p><b>Languages</b> English, Hindi</p>
                             <p><b>Address</b> Pocket B6, Sector 3, Rohini, Delhi-85</p>
                             <p><b>Freelance</b> Available</p>
                             <br/>
-                            <button className="btn custom_btn">DOWNLOAD CV</button>
+                            <a download href="/Abhishek-Resume.pdf" className="d-none downloadLink">Resume Download Link</a>
+                            <button className="btn custom_btn" onClick={() => document.getElementsByClassName('downloadLink')[0].click()}>DOWNLOAD CV</button>
                         </div>
                     </div>
                 </div>

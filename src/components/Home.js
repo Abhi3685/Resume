@@ -64,9 +64,9 @@ export class Home extends Component {
                         <h1 className="home__heading">Hi, I am <span className="highlight">Abhishek Bindra</span></h1>
                         <p className="home__desc">I am a full stack web developer. I can provide clean & optimized code with pixel perfect design. I also make website more & more interactive with web animations.</p>
                         <div className="home__icons">
-                            <i className="fab fa-instagram"></i>
-                            <i className="fab fa-github"></i>
-                            <i className="fab fa-linkedin"></i>
+                            <i className="fab fa-instagram" onClick={() => window.open('https://www.instagram.com/ab.bindra/', '_blank')}></i>
+                            <i className="fab fa-github" onClick={() => window.open('https://github.com/Abhi3685', '_blank')}></i>
+                            <i className="fab fa-linkedin" onClick={() => window.open('https://www.linkedin.com/in/abhishek-bindra-67b710106/', '_blank')}></i>
                         </div>
                     </div>
                 </div>
